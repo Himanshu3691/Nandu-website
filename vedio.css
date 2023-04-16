@@ -1,0 +1,367 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.container {
+    /* height: 100vh; */
+    width: 100%;
+    background-image: url("https://i.makeagif.com/media/5-29-2015/_GKdzx.gif");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+
+.para{
+    opacity: 1;
+}
+.navbar {
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #f2f2ea;
+    font-size: 15px;
+    text-align: left;
+
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    height: fit-content;
+}
+
+.content h1 {
+    font-size: 60px;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.content .btn {
+    /* display: inline-block; */
+    background: linear-gradient(white, blue);
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: lightblue;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+    margin-top: 20px;
+
+}
+
+
+.social-links {
+    transform: rotate(-90deg);
+    /* position: absolute; */
+    /* right: -80px;
+    bottom: 180px; */
+    float: right;
+    margin-right: -9%;
+    margin-top: 10%;
+}
+
+.b{
+    color: #000;
+}
+
+input {
+    height: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 3%;
+
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+.hlo {
+    width: 100%;
+    /* height: 100vh; */
+
+    /* background-color: rgb(144, 171, 180); */
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.hii {
+
+    width: 100%;
+    height: fit-content;
+    background-image: url("water.jpg");
+    opacity: 1;
+}
+
+.hii h1 {
+
+    text-align: center;
+
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+    transition: 0.5s;
+}
+
+.hii h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+.breadcrumb {
+    text-align: center;
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border-radius: 5px;
+    counter-reset: flag;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 36px;
+    color: white;
+    padding: 0 10px 0 60px;
+    background: #666;
+    background: linear-gradient(#666, #333);
+    position: relative;
+}
+
+.breadcrumb a:first-child {
+    padding-left: 46px;
+    border-radius: 5px 0 0 5px;
+}
+
+.breadcrumb a:first-child:before {
+    left: 14px;
+}
+
+.breadcrumb a:last-child {
+    border-radius: 0 5px 5px 0;
+    padding-right: 20px;
+}
+
+.breadcrumb a.active,
+.breadcrumb a:hover {
+    background: #333;
+    background: linear-gradient(#333, #000);
+}
+
+.breadcrumb a.active:after,
+.breadcrumb a:hover:after {
+    background: #333;
+    background: linear-gradient(135deg, #333, #000);
+}
+
+.breadcrumb a:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -18px;
+    width: 36px;
+    height: 36px;
+    transform: scale(0.707) rotate(45deg);
+    z-index: 1;
+    background: #666;
+    background: linear-gradient(135deg, #666, #333);
+    box-shadow: 2px -2px 0 2px rgba(0, 0, 0, 0.4),
+        3px -3px 0 2px rgba(255, 255, 255, 0.1);
+    border-radius: 0 5px 0 50px;
+}
+
+.breadcrumb a:last-child:after {
+    content: none;
+}
+
+.breadcrumb a:before {
+    content: counter(flag);
+    counter-increment: flag;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background: #444;
+    background: linear-gradient(#444, #222);
+    font-weight: bold;
+}
+
+.hand {
+    width: 16em;
+    height: 8em;
+    font-size: 10px;
+    position: relative;
+    color: darksalmon;
+}
+
+.hand::before {
+    content: '';
+    position: absolute;
+    width: 14em;
+    height: 4.5em;
+    background-color: black;
+    border-radius: 4em 1em;
+    top: 4em;
+    filter: blur(1em) opacity(0.3);
+}
+
+.palm {
+    position: absolute;
+    width: 8em;
+    height: 6em;
+    background-color: currentColor;
+    border-radius: 1em 4em;
+    right: 0;
+}
+
+.thumb {
+    position: absolute;
+    width: 9.6em;
+    height: 3.2em;
+    background-color: currentColor;
+    border-radius: 3em 2em 2em 1em;
+    right: 0;
+    bottom: 1em;
+    transform-origin: calc(100% - 2em) 2em;
+    transform: rotate(-20deg);
+    border-bottom: 0.2em solid rgba(0, 0, 0, 0.1);
+    border-left: 0.2em solid rgba(0, 0, 0, 0.1);
+}
+
+.thumb::before {
+    content: '';
+    position: absolute;
+    width: 1.9em;
+    height: 1.9em;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 60% 10% 10% 30%;
+    bottom: -0.3em;
+    left: 0.5em;
+    border-right: 0.1em solid rgba(0, 0, 0, 0.1);
+}
+
+.finger:not(:first-child) {
+    position: absolute;
+    width: 6.4em;
+    height: 3.5em;
+    background-color: currentColor;
+    right: 5.2em;
+    bottom: 4em;
+    transform-origin: 100% 2em;
+    transform: rotate(10deg);
+    --scale: calc(1 - (5 - var(--n)) * 0.2);
+    transform: rotate(10deg) scale(var(--scale));
+    filter: brightness(calc(100% - (5 - var(--n)) * 10%));
+    animation: tap-upper 1.2s ease-in-out infinite;
+    animation-delay: calc((var(--n) - 2) * 0.1s);
+}
+
+@keyframes tap-upper {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(10deg) scale(var(--scale));
+    }
+
+    40% {
+        transform: rotate(50deg) scale(var(--scale));
+    }
+}
+
+.finger:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    width: 9em;
+    height: 3em;
+    background-color: currentColor;
+    right: 4.2em;
+    top: 0.2em;
+    border-radius: 2em;
+    transform-origin: calc(100% - 2em) 2em;
+    transform: rotate(-60deg);
+}
+
+.finger:nth-child(2) {
+    --n: 2;
+}
+
+.finger:nth-child(3) {
+    --n: 3;
+}
+
+.finger:nth-child(4) {
+    --n: 4;
+}
+
+.finger:nth-child(5) {
+    --n: 5;
+}
+
+.hand {
+    justify-content: right;
+}
+
+.b {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(169, 212, 229);
+    background-image: url("waterfall.jpg");
+    background-size: cover;
+    height: fit-content;
+    
+    
+}
+
+img{
+    opacity: 0.2;
+}
